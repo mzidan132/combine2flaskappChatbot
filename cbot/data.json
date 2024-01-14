@@ -50,7 +50,7 @@
      "context": ["search_pharmacy_by_name"]
     },
     {"tag": "search_pharmacy_by_name",
-     "patterns": [],
+     "patterns": ["mridha pharmacy"],
      "responses": ["Loading pharmacy details"],
      "context": [""]
     },
@@ -68,6 +68,25 @@
      "patterns": [],
      "responses": ["Loading hospital details"],
      "context": [""]
-    }
+    },
+    {
+      "tag": "greetin",
+      "patterns": ["Hum"],
+      "responses": ["Helo"],
+      "response_with_links": [
+          {
+              "message": "hey",
+              "text": "Visit our website",
+              "link": "https://example.com"
+          },
+          {
+              "message": "haylo",
+              "text": "Check out our blog",
+              "link": "https://blog.example.com"
+          }
+      ],
+      "context": [""]
+  }
+      
 ]
 }
